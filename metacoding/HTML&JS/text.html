@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      const a = {id:1, name:'임꺽정'}
+      const b = {...a, name:'홍길동', name:'앵무새'}
+      //console.log(b); //{id: 1, name: '앵무새'}
+
+      const c = {id:1, name:'임꺽정',id:3,name:'도날드',name:'다빈치'}
+      //console.log(c); //{id: 3, name: '다빈치'}
+
+      const a2 = {id:1, name:'임꺽정', age:24, gnder:'남'};
+      const b2 = {name:'자동차'};
+      const c2 = {...a2, b2}
+      //console.log(c2); //{id: 1, name: '자동차', age: 24, gnder: '남'}
+
+      const users = [
+         {id:1, name:'임꺽정'},
+         {id:2, name:'홍길동'},
+         {id:3, name:'휴대폰'}
+      ]
+      
+      const updateUsers = {
+         id:2, name:'드라마'
+      }
+      
+      const copyUsers = users.map((n) => n)
+
+      let result = users.map((n,i) => {
+         if(n.id === 2){
+            copyUsers[i] = {...users[i], ...updateUsers}
+         }
+      })
+
+      //console.log(copyUsers)
+
+      const copyUsers2 = users.map(n => n.id === updateUsers.id ? {...n, ...updateUsers} : n)
+      //console.log(copyUsers2);
+
+      let arr1 = Array.from("foo");
+      //console.log(arr1)
+
+      //map, set
+      //map : 이름과 값으로 지정
+      //set : 중복을 허용하지 않는 값들
+
+      let map1 = new Map(
+         [
+            [1,'aa'],
+            [2,'bb'],
+            [3,'cc']
+         ]
+      )
+
+      //console.log(map1)
+      
+      map1.forEach((v,i,a)=>{
+         //console.log(`v:${v}, i:${i}`)
+      })
+
+
+      //let arr2 = new Array([1,2,3,4]);
+      
+      let arr2 = [1,2,3,4]
+      arr2.forEach((v,i,a) => {
+         //console.log(`array v:${v} ,i:${i} ,a:${a}`)
+      })
+      /*
+      array v:1 ,i:0 ,a:1,2,3,4
+      array v:2 ,i:1 ,a:1,2,3,4
+      array v:3 ,i:2 ,a:1,2,3,4
+      array v:4 ,i:3 ,a:1,2,3,4
+      */
+
+      let map2 = new Map([
+         [11,'홍길동'],[12,'임꺽정'],[13,'이순신']
+      ])
+
+      map2.set(14,'장보고')
+
+      map2.forEach((v,i,a) => {
+         //console.log(`map v:${v} ,i:${i} ,a:${a}`)
+      })
+      /*
+      map v:홍길동 ,i:11 ,a:[object Map]
+      map v:임꺽정 ,i:12 ,a:[object Map]
+      map v:이순신 ,i:13 ,a:[object Map]
+      map v:장보고 ,i:14 ,a:[object Map]
+      */
+
+      //console.log(map2.has(11)); //true
+      //console.log(map2.delete(11)); //true
+      //console.log(map2.has(11)); //false
+
+
+      let set2 = new Set([1,2,3,4])
+      set2.forEach((v,i,a) => {
+         //console.log(`set v:${v} ,i:${i} ,a:${a}`)
+      })
+      /*
+      set v:1 ,i:1 ,a:[object Set]
+      set v:2 ,i:2 ,a:[object Set]
+      set v:3 ,i:3 ,a:[object Set]
+      set v:4 ,i:4 ,a:[object Set]
+      */
+
+      let h = Array.from({length:5}).fill(4)
+      //console.log(h)
+
+   </script>
+</body>
+</html>

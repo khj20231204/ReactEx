@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      const a6 = {id:1, name:'임꺽정'}
+      const b6 = {...a6, name:'홍길동', name:'앵무새'}
+
+      const c6 = {id:1, name:'임꺽정',id:3,name:'도날드',name:'다빈치'}
+
+      let list1 = [
+         {id:1, name:"aa"},
+         {id:2, name:"bb"},
+      ]
+
+      let list2 = {id:3, name:"cc"}
+      let list4 = {id:4, name:"dd"}
+      let list5 = {list2, ...list4}
+
+      //{ } : 객체, [ ] : 배열
+      let a = {id:1, name:"aa"}
+      let b = {id:2, name:"bb"}
+      let obj1 = {a, ...b} //{a: {…}, id: 2, name: 'bb'}
+      let obj2 = {...a , b} //{id: 1, name: 'aa', b: {…}}
+      let obj3 = {...a, ...b} //{id: 2, name: 'bb'}
+
+
+      
+      let a1 = [1,2,3,4]
+      let b1 = [3,4,5]
+      let array1 = [a1, b1] //[Array(4), Array(3)]
+      let array2 = [a1, ...b1] //[Array(4), 3, 4, 5]
+      let array3 = [...a1, ...b1] //[1, 2, 3, 4, 3, 4, 5]
+
+
+      
+      let array_obj = [
+         {id:1, name:"aa"},
+         {id:2, name:"bb"}
+      ]
+      let array_obj2 = {id:3, name:"cc"}
+
+      let array_obj3 = [...array_obj , array_obj2] //(3) [{…}, {…}, {…}]
+   </script>
+</body>
+</html>

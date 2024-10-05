@@ -1,0 +1,23 @@
+
+let UseMemoEx = () => {
+
+   const [list, setList] = useState([1,2,3,4]);
+   const [sum, setSum] = useState(0);
+   const [str, setStr] = useState('합계');
+
+
+   let getAddResult = () => {
+      let tot = 0;
+      list.forEach((v,i,a) => tot += v)
+      setSum(tot);
+      return tot;
+   }
+
+   return (
+      <div>
+         <div>
+            <div> {getAddResult()} </div>
+         </div>
+      </div>
+   )
+}
