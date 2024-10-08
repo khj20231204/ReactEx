@@ -36,3 +36,72 @@
     transform: rotate(360deg);
   }
 }
+
+path:hover {
+   /* outline: none; */
+   fill: wheat;
+ }
+ 
+ .rank1 {
+   fill: #FAE0E0;
+ }
+ 
+ .rank2 {
+   fill: #F8D3D4;
+ }
+ 
+ .rank3 {
+   fill: #F19B9A;
+ }
+ 
+ .rank4 {
+   fill: #EC5A5A;
+ }
+ 
+ .rank5 {
+   fill: #E13632;
+ }
+
+ .rank6 {
+   fill: #FAE0E0;
+ }
+ 
+ .rank7 {
+   fill: #F8D3D4;
+ }
+ 
+ .rank8 {
+   fill: #F19B9A;
+ }
+ 
+ .rank9 {
+   fill: #EC5A5A;
+ }
+
+ .rank10 {
+   fill: #EC5A5A;
+ }
+ 
+ .rank11 {
+   fill: #E13632;
+ }
+
+ .rank12 {
+   fill: #FAE0E0;
+ }
+ 
+ .rank13 {
+   fill: #F8D3D4;
+ }
+ 
+ .rank14 {
+   fill: #F19B9A;
+ }
+ 
+ .rank15 {
+   fill: #EC5A5A;
+ }
+ 
+ .rank16 {
+   fill: #E13632;
+ }

@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import cityRank from '@svg-maps/south-korea';
+import cityRatioResList from '@svg-maps/south-korea';
+import cityName from '@svg-maps/south-korea';
+import cityId from '@svg-maps/south-korea';
+import cityD from '@svg-maps/south-korea';
+import Map from './Map';
+import MapOriginal from './MapOriginal';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+   return(
+      <>
+        <MapOriginal/>
+        {/* <Map></Map> */}
+      </>
+   )
 }
+   
+   
+    
+    
+   
+   
 
 export default App;
