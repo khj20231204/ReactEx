@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import {useState} from 'react';
+import Test2 from '../../hooks_ex/src/components/Test';
+import { Test } from '../../hooks_ex/src/components/Test';
+import { num } from '../../hooks_ex/src/components/Test';
 
 function App() {
   console.log("app 앱실행");

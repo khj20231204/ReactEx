@@ -5,8 +5,8 @@ import cityName from '@svg-maps/south-korea';
 import cityId from '@svg-maps/south-korea';
 import cityD from '@svg-maps/south-korea';
 
-const Map = ({ heatmapData }) => {
-   console.log("heatmapData:"+heatmapData);
+const MyMap = ( heatmapData ) => {
+   console.log("heatmapData:"+heatmapData.name);
    return (
       <svg className="heatmap-map" xmlns="south-korea.svg" viewBox="0 0 524 631">
          {heatmapData.map((city) => (
@@ -34,17 +34,14 @@ const Map = ({ heatmapData }) => {
       );
     };
 
-    export default Map;
+    export default MyMap;
 /* 
-    const a = array.map((v) => {
+    const heatmapData = cityRatioResList.locations.map(function (el) {
       let obj = {};
-      obj["id"] = 1;
-      obj["name"] = "name";
-      return obj;
-    })
-
-    const Map = ( {a}) => {
-      {a.map((b) => {
-         console.log(b.id, b.name)
-      })}
-    } */
+      
+      obj["rank"] = el.ratio;
+      obj["name"] = el.city;
+      obj["id"] = el.city;
+      obj["d"] = el.d;
+      return obj; 
+    }); */
