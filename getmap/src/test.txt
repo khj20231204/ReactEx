@@ -1,0 +1,11 @@
+
+
+const [mousePoint ,setMousePoint] = useState(x:0, y:0)
+
+const handleMouseMove = (event) => {
+   setMousePoint({
+      x: event.clientX,
+      y: event.clientY
+   })
+}
+
