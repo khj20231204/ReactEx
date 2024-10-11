@@ -8,9 +8,12 @@ import cityId from '@svg-maps/south-korea';
 import cityD from '@svg-maps/south-korea';
 import MyMap from './MyMap';
 import RandomMouseMove from './RandomMouseMove';
+import KakaoMap from './KakaoMap';
+import Test from './Test';
 
 function App() {
 
+   /*
    const heatmapData = cityRatioResList.locations.map(function (el) {
       let obj = [];
       
@@ -18,20 +21,23 @@ function App() {
       obj["name"] = el.city;
       obj["id"] = el.city;
       obj["d"] = el.d;
-      /*
+      
     obj["rank"] = cityRank(el.ratio);
     obj["name"] = cityName(el.city);
     obj["id"] = cityId(el.city);
-    obj["d"] = cityD(el.city);*/
+    obj["d"] = cityD(el.city);
 
       return obj; 
    });
+*/
 
    return(
       <>
         {/* <MapOriginal/> */}
         {/* <MyMap heatmapData={heatmapData}></MyMap> */}
-        <RandomMouseMove/>
+        {/* <RandomMouseMove/> */}
+        {/* <KakaoMap /> */}
+        <Test />
       </>
    )
 }
