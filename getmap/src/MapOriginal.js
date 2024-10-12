@@ -1,5 +1,5 @@
  
-  import React, { useState } from 'react';
+  import React, { useEffect, useState } from 'react';
   import cityRank from '@svg-maps/south-korea';
 import cityRatioResList from '@svg-maps/south-korea';
 import cityName from '@svg-maps/south-korea';
@@ -8,11 +8,16 @@ import cityD from '@svg-maps/south-korea';
   
   const MapOriginal = () => {
   
-   let getName = (e) => {
-      
-      alert(e)
-   }
+   useEffect(() => {
+      var rect = document.querySelector('path');
 
+      rect.addEventListener("click", function() {
+      alert(rect.getAttribute("name"));
+      });
+
+   });
+   
+  
    return (
       <div>
       <div className="App" style={{width:'500px'}}>

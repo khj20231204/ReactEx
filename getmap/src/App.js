@@ -33,11 +33,11 @@ function App() {
 
    return(
       <>
-        {/* <MapOriginal/> */}
+        <MapOriginal/>
         {/* <MyMap heatmapData={heatmapData}></MyMap> */}
         {/* <RandomMouseMove/> */}
         {/* <KakaoMap /> */}
-        <Test />
+        {/* <Test /> */}
       </>
    )
 }
