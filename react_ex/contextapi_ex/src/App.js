@@ -3,6 +3,7 @@ import './App.css';
 import { createContext, useContext, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Details from './Details';
+import MyProvider from './context_ex/MyProvider';
 
 {/*
 1)App에 있는 state를 공유하겠다
@@ -27,6 +28,11 @@ function App() {
             </Context1.Provider>
           }></Route>
         </Routes>
+
+          <hr></hr>
+
+        <MyProvider></MyProvider>
+
     </div>
   );
 }
