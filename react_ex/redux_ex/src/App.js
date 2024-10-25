@@ -8,6 +8,10 @@ import CCompo from './childcomponents/CCompo';
 
 function App() {
   return (
+   <>
+   <div>
+      <MetacodingEx />
+   </div>
    <BrowserRouter>
       <Routes>
          <Route path="/" exact={true} element={<ACompo/>}></Route>
@@ -15,6 +19,7 @@ function App() {
          <Route path="/c" exact={true} element={<CCompo/>}></Route>
       </Routes>
    </BrowserRouter>
+   </>
   );
 }
 
