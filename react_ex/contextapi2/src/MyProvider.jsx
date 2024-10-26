@@ -8,6 +8,7 @@ const MyProvider = ({ children }) => {
 
   return (
     <MyContext.Provider value={{ myState, setMyState }}>
+      {console.log({children})}
       {children}
     </MyContext.Provider>
   );

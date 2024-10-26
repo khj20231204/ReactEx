@@ -1,16 +1,15 @@
-// App.js
-
-import React from 'react';
-import MyFunctionalComponent from './MyFunctionalComponent';
-import MyProvider from './MyProvider';
+import ProviderMaker from "./ProviderMaker";
+import AA from "./AA";
+import BB from "./BB";
 
 const App = () => {
   return (
-    <MyProvider>
-      <div>
-        <MyFunctionalComponent />
-      </div>
-    </MyProvider>
+    <div style={{margin:10,padding:10}}>
+    <ProviderMaker>
+      <AA></AA>
+      <BB></BB>
+    </ProviderMaker>
+    </div>
   );
 };
 

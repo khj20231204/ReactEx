@@ -4,7 +4,7 @@ import TestA from './TestA';
 
 export let MyContext2 = createContext()
 
-const MyProvider = ({children}) => {
+const MyProvider = () => {
 
    let [myState, setMyState] = useState("myState");
 
